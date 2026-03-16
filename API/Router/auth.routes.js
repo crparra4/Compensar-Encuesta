@@ -1,0 +1,12 @@
+import { Router} from 'express';
+import { register, login } from '../Controllers/auth.controller.js';
+
+
+const router = Router();
+
+//TODAS LA RUTAS DE AUTH ACA (/auth)
+router.post('/register', register);
+router.post('/login', login);
+
+
+export default router;
