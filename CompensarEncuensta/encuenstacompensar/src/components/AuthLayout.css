@@ -1,0 +1,218 @@
+
+.auth-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+  overflow: hidden; 
+}
+
+
+.auth-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 10rem 4rem 6rem;
+}
+
+.auth-logo {
+  position: absolute;
+  top: 2.5rem;
+  left: 4rem;
+  height: 50px;
+}
+
+.auth-text-content {
+  max-width: 480px;
+}
+
+.auth-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.auth-subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 15px 0 25px;
+  color: #111827;
+}
+
+.auth-register-text {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: 2rem;
+}
+
+.auth-register-link {
+  color: #ff6a00;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+.auth-image-container {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-end;
+  width: 100%;
+  margin-top: auto;
+  position: absolute;
+  bottom: 3rem;
+}
+
+.auth-illustration {
+  max-width: 290px; 
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.auth-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
+}
+
+.login-input {
+  width: 100%;
+  padding: 1.2rem; 
+  border-radius: 12px;
+  border: none;
+  background-color: #f3f4f6;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.login-input:focus {
+  background-color: #f9fafb;
+  box-shadow: 0 0 0 2px #ff6a00;
+}
+
+.login-submit-btn {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 15px 30px rgba(255, 106, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.password-group {
+  position: relative;
+}
+
+.password-group .login-input {
+  padding-right: 3rem;
+}
+
+.password-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #9ca3af;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-submit-btn:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+}
+
+.forgot-password-container {
+    text-align: right;
+    margin-top: -0.5rem;
+  }
+  
+  .forgot-password-link {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    cursor: pointer;
+  }
+  
+  .forgot-password-link:hover {
+    color: #4b5563;
+  }
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0 2rem;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.divider-text {
+  padding: 0 1.5rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.social-btn {
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+.social-btn:hover {
+  transform: scale(1.15);
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+/* ── Reset SOLO dentro del dashboard de usuario ─────────── */
+.user-dashboard-root *,
+.user-dashboard-root *::before,
+.user-dashboard-root *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Root: ocupa TODO el ancho y alto del viewport ──────── */
+.user-dashboard-root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1f4f8;
+  font-family: 'Sora', system-ui, sans-serif;
+}
+
+/* ── Layout ─────────────────────────────────────────────── */
+.user-dashboard-root .dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ── Bienvenida ─────────────────────────────────────────── */
+.user-dashboard-root .dashboard-main {
+  padding: 36px 48px 0;
+}
+
+.user-dashboard-root .dashboard-main h1 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.user-dashboard-root .dashboard-main p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* ── Sección encuestas ───────────────────────────────────── */
+.user-dashboard-root .dashboard-section {
+  padding: 32px 48px 48px;
+}
+
+.user-dashboard-root .dashboard-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.user-dashboard-root .dashboard-section p.section-sub {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 24px;
+}
+
+/* ── Grid ────────────────────────────────────────────────── */
+.user-dashboard-root .user-surveys-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* ── Card ────────────────────────────────────────────────── */
+.user-dashboard-root .user-survey-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.user-dashboard-root .user-survey-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.09);
+  transform: translateY(-3px);
+  border-color: rgba(255, 102, 0, 0.25);
+}
+
+.user-dashboard-root .user-survey-card h3 {
+  font-size: 0.975rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.user-dashboard-root .user-survey-card p {
+  font-size: 0.855rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Meta ────────────────────────────────────────────────── */
+.user-dashboard-root .user-card-meta {
+  display: flex;
+  gap: 14px;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* ── Botón ───────────────────────────────────────────────── */
+.user-dashboard-root .btn-responder {
+  width: 100%;
+  padding: 10px;
+  background: #FF6600;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Sora', system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.user-dashboard-root .btn-responder:hover {
+  background: #e55a00;
+}
+
+.user-dashboard-root .btn-responder:active {
+  transform: scale(0.98);
+}
+
+/* ── Estados ─────────────────────────────────────────────── */
+.user-dashboard-root .user-loading,
+.user-dashboard-root .user-empty,
+.user-dashboard-root .user-error {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  font-family: 'Sora', system-ui, sans-serif;
+}
+
+.user-dashboard-root .user-loading { color: #94a3b8; }
+.user-dashboard-root .user-empty   { color: #cbd5e1; }
+.user-dashboard-root .user-error   { color: #dc2626; }

@@ -1,0 +1,218 @@
+:root {
+    --compensar-orange: #FF6600;
+    --compensar-blue: #00529B;
+    --bg-soft: #F0F2F5;
+    --text-main: #2D3436;
+}
+
+.create-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+.create-header {
+    margin-bottom: 40px;
+}
+
+.badge {
+    background: rgba(255, 102, 0, 0.1);
+    color: var(--compensar-orange);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.create-header h1 {
+    font-size: 34px;
+    color: var(--compensar-blue);
+    margin: 10px 0;
+}
+
+.accent-line {
+    width: 60px;
+    height: 4px;
+    background: var(--compensar-orange);
+    border-radius: 2px;
+}
+
+
+.input-minimal {
+    border: none;
+    background: transparent;
+    width: 100%;
+    border-bottom: 2px solid #E0E0E0;
+    padding: 15px 0;
+    transition: all 0.3s;
+}
+
+.title-input {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.desc-input {
+    font-size: 16px;
+    color: #636E72;
+    min-height: 50px;
+}
+
+.input-minimal:focus {
+    outline: none;
+    border-color: var(--compensar-orange);
+}
+
+
+.modern-card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 20px;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.card-indicator {
+    background: var(--compensar-blue);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.card-body { flex-grow: 1; }
+
+.card-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-card-title {
+    flex-grow: 1;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 5px;
+}
+
+.input-card-title:focus { outline: none; border-color: var(--compensar-blue); }
+
+.select-minimal {
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+    background: #F8F9FA;
+    font-weight: 600;
+}
+
+/* Opciones */
+.options-zone {
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.bullet {
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--compensar-orange);
+    border-radius: 50%;
+}
+
+.input-option {
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.btn-add-opt {
+    background: none;
+    border: 1px dashed var(--compensar-orange);
+    color: var(--compensar-orange);
+    padding: 8px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.form-footer {
+    position: sticky;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.btn-primary-modern {
+    background: var(--compensar-orange);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.4);
+}
+
+.btn-secondary-modern {
+    background: var(--compensar-blue);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.action-del {
+    color: #FF7675;
+    background: none;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.btn-icon-del {
+    background: #FF7675;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    line-height: 1;
+    cursor: pointer;
+}
